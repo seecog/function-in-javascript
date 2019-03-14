@@ -1,0 +1,31 @@
+<html>
+
+<script>
+function add(a,b){
+return this.sal+a+b;//this refers to the object that actually owns the function
+}
+
+var obj = {sal : 200};
+//we want to call the add function in context with the obj
+
+var ans = add.call(obj,2,5);
+
+console.log('The sum is '+ans)
+
+//when parameters not known. When we are using the array parameter
+
+function add2(){
+var s = this.start;
+for(var i=0;i<arguments.length;i++){
+s = s+arguments[i];
+}
+return s;
+}
+
+var myObj = {start : 399};
+var ans3 = add2.apply(myObj,[2,3,1])
+console.log('The final ans is '+ans3);
+
+</script>
+
+</html>

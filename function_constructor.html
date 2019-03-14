@@ -1,0 +1,20 @@
+<html>
+
+<script>
+var show = new Function("a","b","return a+b")
+var ans = show(2,5);
+console.log('The sum is ',ans);
+
+/*
+var show = new Function("a","b","return a+b")
+
+function show(a,b){
+    return (a+b)
+}
+*/
+
+var average = new Function("p","c","m","h","e","return (p+c+m+h+e)/5")
+var ans = average(90,9,89,98,99);
+console.log('The net average is ',ans)
+</script>
+</html>

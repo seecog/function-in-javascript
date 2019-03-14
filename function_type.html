@@ -1,0 +1,34 @@
+<html>
+
+<script>
+
+function show(){
+
+}
+console.log('The type of function is '+typeof show);
+//typeof oprator gives type as function
+//Internally function is treated as an object
+
+//Write a programme to prof that gfunction is an object. 
+//Statment : function is an object. It also contains the properties and the methods
+//What property : arguments as property(object)
+//What function : toString()
+
+function add(){
+
+var s = 0;
+for(var i=0;i<arguments.length;i++){//argumnets.length is by-defaut property of function
+console.log('The value is ',arguments[i]);
+s = s+arguments[i]
+}
+return s;
+}
+var ans = add(10,2,3,1,2,3,2,3);
+console.log('The sum is '+ans)
+
+//toString() method of show function
+//it returns the string form of function
+console.log(add.toString())
+</script>
+
+</html>

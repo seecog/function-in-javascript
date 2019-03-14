@@ -1,0 +1,29 @@
+<html>
+
+<script>
+
+(function show(){
+    console.log("I am an indian");
+})();
+
+//(<function_defination>)();
+
+//var is function scoped
+/*
+function data(){
+    var a = 10;
+    var b = 20;
+}
+console.log('The values are ',a,b);
+*/
+(function(){
+ var  a=100;
+var b = 200;
+console.log('The values again are ',a,b)
+})();
+
+console.log('The values again are *',a,b)
+
+</script>
+
+</html>

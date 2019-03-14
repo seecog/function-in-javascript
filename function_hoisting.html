@@ -1,0 +1,40 @@
+<html>
+
+<script>
+//hoisting always takes place for named function only
+//hoisting never takes place for the anonomous function
+
+
+show();
+
+function show(){
+    console.log('Helo world');
+}
+//ABove is possible due to teh hoisting
+
+/*
+functionshow(){
+
+}
+show();
+
+*/
+
+/*in C
+
+void show(){
+printf("Hellow world")
+}
+void();
+*/
+
+//anonomous function
+
+show2();
+var show2 = function(){
+    console.log('Inside the other function')
+}
+//oisting never takes place for anonomoys function
+</script>
+
+</html>
