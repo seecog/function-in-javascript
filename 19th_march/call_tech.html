@@ -1,0 +1,15 @@
+<html>
+
+
+<script>
+var obj = {some : 100};
+
+
+function add(a,b){
+    console.log('The sum is '+(a+b+this.some))
+}
+
+add.call(obj,2,5);
+
+</script>
+</html>

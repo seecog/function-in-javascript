@@ -1,0 +1,28 @@
+<html>
+
+<script>
+//closures. Is a inner function that can access the global variable, parent function arguments , parent function varibales , it's own variables , it;s own arguments
+
+var globalVar1 = 10;
+
+(function parent(parentArg1){
+var parentVar = 20;
+
+(function child(innerArg1){
+var innerVar = 30;
+console.log('The global ',globalVar1);
+console.log('The parent parameter ',parentArg1)
+console.log('The parent variable ',parentVar)
+console.log('The child argument ',innerArg1)
+console.log('The child value ',innerVar)
+})(78);
+
+
+
+})(50)
+
+
+
+</script>
+
+</html>

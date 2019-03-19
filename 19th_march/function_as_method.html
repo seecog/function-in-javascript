@@ -1,0 +1,20 @@
+<html>
+
+<script>
+
+//function as method : when function defined in object , it is method
+
+var obj = {
+name : 'Mohan',
+age : 21,
+sal : 200,
+getInfo : function(){
+    return this.name+"-"+this.age+'-'+this.sal;
+}
+}
+
+obj.getInfo();//here this will work for the obj object.
+
+</script>
+
+</html>

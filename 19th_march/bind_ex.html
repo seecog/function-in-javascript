@@ -1,0 +1,16 @@
+<html>
+
+<script>
+
+var obj1 = {something : 100};
+
+function add(a,b){
+console.log('The meg sum is ',(this.something+a+b))
+}
+
+
+add.bind(obj1,2,3)();
+//bind method returns the function reference. so we need to call it explicitely
+</script>
+
+</html>

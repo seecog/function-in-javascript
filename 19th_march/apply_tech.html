@@ -1,0 +1,18 @@
+<html>
+
+<script>
+var obj1 = {
+    something : 1000
+}
+
+
+function add(a,b){
+console.log('The real sum is '+(this.something+a+b))
+}
+
+add.apply(obj1,[2,3])
+
+
+</script>
+
+</html>

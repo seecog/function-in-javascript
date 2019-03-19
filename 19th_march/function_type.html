@@ -1,0 +1,35 @@
+<html>
+
+<script>
+function show(){
+
+}
+console.log('The type of fiunction is ',typeof show);//function
+//Note : Type of function is function only. But internally it is treated as object
+
+//each object has it's own properties and method as well
+//function contain property like arguments.length
+//function toString()
+
+function add(a,b){
+return a+b;
+}
+
+console.log('The type of function is ',typeof add);
+
+function add1(){
+
+var s =0;
+for(var i=0;i<arguments.length;i++){//arguments is default object property of function
+s = s+arguments[i]
+}
+console.log('The ----> '+s)
+}
+
+add1(1,2);
+add1(23,4,7);
+add1(4,3,3,4);
+console.log("**** ",add.toString())
+</script>
+
+</html>
